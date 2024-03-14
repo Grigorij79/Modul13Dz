@@ -11,7 +11,8 @@ import java.net.http.HttpResponse;
 public class PrivatBankHistory {
     private static final HttpClient CLIENT = HttpClient.newHttpClient();
     private  static final Gson GSON = new Gson();
-
+    //qqqq
+    //rrrr
 
     public static void main(String[] args) throws IOException, InterruptedException {
 
