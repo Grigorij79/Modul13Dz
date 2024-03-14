@@ -58,7 +58,7 @@ public class HttpUtillTask1 {
         return response.statusCode();
     }
     public static String getUserId (int id) throws IOException, InterruptedException {
-        String uri = "https://jsonplaceholder.typicode.com/users/" + id;
+        String uri = "https://jsonplaceholder.typicode.com/users?id=" + id;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))
                 .GET()
@@ -68,6 +68,7 @@ public class HttpUtillTask1 {
     }
 
     public static String getUserName(String userName) throws IOException, InterruptedException {
+        //String uri = "https://bank.gov.ua/NBUStatService/v1/statdirectory/exchange?json/cc=" + userName;
         String uri = "https://jsonplaceholder.typicode.com/users?username=" + userName;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))

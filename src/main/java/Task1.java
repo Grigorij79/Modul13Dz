@@ -8,6 +8,7 @@ import java.util.Arrays;
 
 public class Task1 {
     private static final String USER_URI = "https://jsonplaceholder.typicode.com/users";
+
     public static void main(String[] args) throws IOException, InterruptedException{
 
         //*********** zad 1.1 *************
@@ -45,7 +46,7 @@ public class Task1 {
 
         //*********** zad 1.6 *************
         System.out.println("*********** zad 1.6 *************");
-        String userName = "Samantha";
+        String userName = "Antonette";
         System.out.println( "userName = " + userName + HttpUtillTask1.getUserName(userName));
 
     }
